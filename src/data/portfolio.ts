@@ -38,7 +38,7 @@ export const heroStats: { target: number; label: string }[] = [
 /* ─── About ──────────────────────────────────────────────────── */
 export const aboutBio: string[] = [
   "I am a <strong>Computer Science and Engineering</strong> (CSE) student at <strong>SEU</strong>, <strong>Bangladesh</strong>. My focus is AI research, specifically federated learning, transformer models, explainable AI, and medical imaging.",
-  "I build systems that tackle real problems in healthcare, finance, and security. I've collaborated with researchers across the <strong>UK</strong> and <strong>USA</strong>, with papers accepted and submitted to conferences like <strong>IEEE FUZZ</strong>, <strong>NeurIPS</strong>, and <strong>ICDM</strong>.",
+  "I build systems that tackle real problems in healthcare, finance, and security. I've collaborated with researchers across the <strong>UK</strong> and <strong>USA</strong>, with papers <strong>accepted at IEEE FUZZ</strong>, <strong>submitted to NeurIPS</strong>, and <strong>targeting ICDM</strong>.",
   "I also believe in working close to the algorithm, which is reflected in works like <strong>TRUST-GFS</strong> and <strong>UADGE-FS</strong>, where I contributed to designing novel feature selection frameworks from the ground up.",
   "I'm actively seeking MSc opportunities in Europe, North America, and East Asia where I can push this research further.",
 ];
@@ -83,7 +83,7 @@ export const education: Education[] = [
     degree:      'B.Sc. in Computer Science and Engineering',
     institution: 'Southeast University (SEU), Tejgaon, Dhaka',
     cgpa:        '4.00 / 4.00',
-    cgpaRecent:  'Ranked 1st in CSE Department · Full Tuition Waiver Scholarship',
+    cgpaRecent:  '🥇 Ranked 1st in CSE Department',
   },
 ];
 
@@ -122,7 +122,7 @@ export const researchPositions: ResearchPosition[] = [
     faculty:    'School of Computer and Cyber Sciences',
     variant:    'gold',
     topics: [
-      'UADGE-FS: Uncertainty-Aware, Dominance-Gated Evolutionary Feature Selection — submitted to ICDM 2026 (<strong>China, A* flagship</strong>).',
+      'UADGE-FS: Uncertainty-Aware, Dominance-Gated Evolutionary Feature Selection — targeting ICDM 2026 (<strong>China, A* flagship</strong>).',
       'TRUST-GFS: Tie-safe Reliability and Uplift Screening for Target-guided Genetic Feature Selection — submitted to NeurIPS 2026 (<strong>A* flagship</strong>).',
     ],
   },
@@ -149,7 +149,7 @@ export const publications: Publication[] = [
   /* ── Accepted / Forthcoming ─────────────────────────────────── */
   {
     title:    'Federated Explainable Intrusion Detection via Empirical-Bernstein Certified Bandit-KL Mixing with Tree Stacking',
-    authors:  'Md. Zubayer Ahmad Shibly, Dr. Maybin Muyeba, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, MJ Islam, MMR Sakib, Al-Amain, MK Muyeba, M Saraee',
     venue:    'IEEE FUZZ 2026, Netherlands',
     year:     2026,
     type:     'International Conference',
@@ -158,7 +158,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'FedBridge++: Privacy-Preserving Federated Self-Supervision with Interpretable Transformers for Tabular Loan Approval',
-    authors:  'Md. Zubayer Ahmad Shibly, Dr. Maybin Muyeba, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, SAK Aditto, MJ Islam, Al-Amain, MK Muyeba, M Saraee',
     venue:    'SERA 2026, USA',
     year:     2026,
     type:     'International Conference',
@@ -167,7 +167,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'Leveraging Multi-Algorithmic Feature Selection and Ensemble Machine Learning for Accurate Detection of Polycystic Ovarian Syndrome',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, S Mia, N Uddin, I Amin, Al-Amain, KMM Uddin, R Bardhan, MS Babu',
     venue:    'IEEE ICCCNT 2025, Indore, India',
     year:     2025,
     type:     'International Conference',
@@ -175,7 +175,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'A Novel Hybrid Feature Selection and Ensemble Learning Approach for Mortality Risk Classification in Hepatitis B Patients: An Explainable AI Study',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, IH Inam, A Islam, MM Hassan, AKM Masum, KMM Uddin',
     venue:    "ICCIT 2025, Cox's Bazar, Bangladesh",
     year:     2025,
     type:     'Domestic Conference',
@@ -183,7 +183,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'Explainable AI-Driven Ensemble Learning Framework for PCOS Diagnosis Using AIM-PDCF and Quantum-GraphRFE Feature Selection',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, IH Inam, A Islam, AKM Masum, KMM Uddin',
     venue:    "ICCIT 2025, Cox's Bazar, Bangladesh",
     year:     2025,
     type:     'Domestic Conference',
@@ -193,7 +193,7 @@ export const publications: Publication[] = [
   /* ── Under Review — International Conferences ───────────────── */
   {
     title:    'Adaptive Biomarker Categorization with DiCAT and TCCA Feature Selection for Robust, Explainable Early Ovarian Cancer Detection',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, T Ahmod, SZ Khan, Al-Amain, S Ahmed',
     venue:    'IRAI 2026, Melbourne, Australia',
     year:     2026,
     type:     'International Conference',
@@ -201,7 +201,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'An Explainable Stacking Ensemble Framework with Disagreement-Aware Feature Selection for Loan Approval Prediction',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  'MZ Hossen, S Ullah, <strong class="author-self">MZA Shibly</strong>, A Islam, KMM Uddin',
     venue:    'TENSYMP 2026, Penang, Malaysia',
     year:     2026,
     type:     'International Conference',
@@ -209,7 +209,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'An Interpretable Framework for Early Lung Cancer Prediction Using Graph Fusion and Role Stability for Robust Feature Selection with TabFGT',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  'S Ullah, <strong class="author-self">MZA Shibly</strong>, MJ Islam, Al-Amain, S Ahmed, MS Babu',
     venue:    'IEEE AVSS 2026, Lecce, Italy',
     year:     2026,
     type:     'International Conference',
@@ -220,7 +220,7 @@ export const publications: Publication[] = [
   /* ── Under Review — Journals ────────────────────────────────── */
   {
     title:    'Q-SEAL: An Explainable Transformer-Based Meta-Ensemble Model for Ovarian Cancer Prediction and Deployment Evaluation',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, SAK Aditto, MJ Islam, KMM Uddin',
     venue:    'Journal of Pathology Informatics',
     year:     2026,
     type:     'Journal',
@@ -228,15 +228,15 @@ export const publications: Publication[] = [
   },
   {
     title:    'Image Dataset for Classification and Recognition with Nutritional Values of Small Indigenous Freshwater River Fish from Bangladesh',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
-    venue:    'Data in Brief, Elsevier',
+    authors:  'T Ahmod, <strong class="author-self">MZA Shibly</strong>, MM Hassan',
+    venue:    'Scientific Data, Nature',
     year:     2026,
     type:     'Journal',
     status:   'Under Review',
   },
   {
     title:    'Explainable Ovarian Cancer Diagnosis: Fusion-Based RFE-SHAP and Quantum-Inspired ANN-QUBO Feature Selection with Two-Tier Evaluation',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, SAK Aditto, MJ Islam, N Hasan',
     venue:    'Digital Health (SAGE)',
     year:     2026,
     type:     'Journal',
@@ -244,7 +244,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'AIDPCP: An Adaptive Intelligent Preprocessing and Clustering Pipeline for Obesity Prediction with Explainable AI',
-    authors:  'Md. Zubayer Ahmad Shibly, et al.',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, IH Inam, AKM Masum, KMM Uddin',
     venue:    'IET Software (Wiley)',
     year:     2026,
     type:     'Journal',
@@ -252,7 +252,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'FedGCF-Net: Federated Genetically-Optimized Contrast-Enhanced Fusion Network for Brain Tumor Classification',
-    authors:  'Md. Zubayer Ahmad Shibly',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, KMM Uddin, MJ Islam, AKM Masum',
     venue:    'The Journal of Engineering',
     year:     2026,
     type:     'Journal',

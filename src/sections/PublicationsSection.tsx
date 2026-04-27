@@ -158,7 +158,7 @@ const PublicationsSection = () => {
               {/* Content column */}
               <div className="pub-body">
                 <h3 className="pub-title">{pub.title}</h3>
-                <p className="pub-authors">{pub.authors}</p>
+                <p className="pub-authors" dangerouslySetInnerHTML={{ __html: pub.authors }} />
                 <p className="pub-venue">{pub.venue}, {pub.year}</p>
 
                 {/* Badges + link row */}

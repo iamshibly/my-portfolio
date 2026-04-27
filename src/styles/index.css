@@ -713,6 +713,13 @@ body::before {
   overflow-wrap: break-word;
 }
 
+/* Highlighted author name (portfolio owner) */
+.author-self {
+  color: var(--cyan);
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(var(--cyan-rgb), 0.35);
+}
+
 /* Venue + year: gold, sits clearly below authors */
 .pub-venue {
   font-family: var(--font-mono);
