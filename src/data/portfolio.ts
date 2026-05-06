@@ -109,8 +109,8 @@ export const researchPositions: ResearchPosition[] = [
     faculty:    'School of Science, Engineering & Environment',
     variant:    'cyan',
     topics: [
-      'Developed an explainable federated intrusion detection framework based on Empirical-Bernstein certified Bandit-KL mixing with tree stacking — accepted at IEEE FUZZ 2026 (<strong>Netherlands, B-core</strong>).',
-      'Designed FedBridge++, a privacy-preserving federated self-supervision framework with interpretable transformers for tabular loan approval — accepted at SERA 2026 (<strong>USA, C-core</strong>).',
+      'Developed an explainable federated intrusion detection framework based on Empirical-Bernstein certified Bandit-KL mixing with tree stacking — accepted at IEEE FUZZ 2026 (<strong>Netherlands, <span style="color: #FFD700;">B-core</span></strong>).',
+      'Designed FedBridge++, a privacy-preserving federated self-supervision framework with interpretable transformers for tabular loan approval — accepted at SERA 2026 (<strong>USA, <span style="color: #FFD700;">C-core</span></strong>).',
     ],
   },
   {
@@ -122,8 +122,8 @@ export const researchPositions: ResearchPosition[] = [
     faculty:    'School of Computer and Cyber Sciences',
     variant:    'gold',
     topics: [
-      'UADGE-FS: Uncertainty-Aware, Dominance-Gated Evolutionary Feature Selection — targeting ICDM 2026 (<strong>China, A* flagship</strong>).',
-      'TRUST-GFS: Tie-safe Reliability and Uplift Screening for Target-guided Genetic Feature Selection — submitted to NeurIPS 2026 (<strong>A* flagship</strong>).',
+      'UADGE-FS: Uncertainty-Aware, Dominance-Gated Evolutionary Feature Selection — targeting ICDM 2026 (<strong>China, <span style="color: #FFD700;">A* flagship</span></strong>).',
+      'TRUST-GFS: Tie-safe Reliability and Uplift Screening for Target-guided Genetic Feature Selection — submitted to NeurIPS 2026 (<strong><span style="color: #FFD700;">A* flagship</span></strong>).',
     ],
   },
 ];
@@ -146,6 +146,15 @@ export interface Publication {
 }
 
 export const publications: Publication[] = [
+  {
+    title:    'TRUST-GFS: Tie-safe Reliability and Uplift Screening for Target-guided Genetic Feature Selection',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, R Bardhan',
+    venue:    'NeurIPS 2026',
+    year:     2026,
+    type:     'International Conference',
+    status:   'Under Review',
+    coreRank: 'A*',
+  },
   /* ── Accepted / Forthcoming ─────────────────────────────────── */
   {
     title:    'Federated Explainable Intrusion Detection via Empirical-Bernstein Certified Bandit-KL Mixing with Tree Stacking',
@@ -227,14 +236,6 @@ export const publications: Publication[] = [
     status:   'Under Review',
   },
   {
-    title:    'Image Dataset for Classification and Recognition with Nutritional Values of Small Indigenous Freshwater River Fish from Bangladesh',
-    authors:  'T Ahmod, <strong class="author-self">MZA Shibly</strong>, MM Hassan',
-    venue:    'Scientific Data, Nature',
-    year:     2026,
-    type:     'Journal',
-    status:   'Under Review',
-  },
-  {
     title:    'Explainable Ovarian Cancer Diagnosis: Fusion-Based RFE-SHAP and Quantum-Inspired ANN-QUBO Feature Selection with Two-Tier Evaluation',
     authors:  '<strong class="author-self">MZA Shibly</strong>, SAK Aditto, MJ Islam, N Hasan',
     venue:    'Digital Health (SAGE)',
@@ -253,7 +254,7 @@ export const publications: Publication[] = [
   {
     title:    'FedGCF-Net: Federated Genetically-Optimized Contrast-Enhanced Fusion Network for Brain Tumor Classification',
     authors:  '<strong class="author-self">MZA Shibly</strong>, KMM Uddin, MJ Islam, AKM Masum',
-    venue:    'The Journal of Engineering',
+    venue:    'International Journal of Intelligent Systems (Wiley)',
     year:     2026,
     type:     'Journal',
     status:   'Under Review',

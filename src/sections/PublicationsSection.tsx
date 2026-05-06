@@ -85,10 +85,26 @@ const PublicationsSection = () => {
       ? publications.filter(p => p.status === 'Under Review')
       : publications.filter(p => p.type === activeFilter);
 
-  /* Sort: accepted/published first, then under-review. Within each, year desc. */
+  /* Sort based on user preference: A* > A > B > C > Int Conf > Dom Conf > Journal */
   const sorted = [...filtered].sort((a, b) => {
-    const rank = (s: PubStatus) => (s === 'Under Review' ? 1 : 0);
-    const ra = rank(a.status), rb = rank(b.status);
+    const getSortWeight = (pub: typeof publications[0]) => {
+      if (pub.coreRank === 'A*') return 1;
+      if (pub.coreRank === 'A') return 2;
+      if (pub.coreRank === 'B') return 3;
+      if (pub.coreRank === 'C') return 4;
+      if (pub.type === 'International Conference') return 5;
+      if (pub.type === 'Domestic Conference') return 6;
+      if (pub.type === 'Journal') return 7;
+      return 8;
+    };
+    
+    const wa = getSortWeight(a);
+    const wb = getSortWeight(b);
+    if (wa !== wb) return wa - wb;
+    
+    // Fallback to status then year
+    const statusRank = (s: PubStatus) => (s === 'Under Review' ? 1 : 0);
+    const ra = statusRank(a.status), rb = statusRank(b.status);
     if (ra !== rb) return ra - rb;
     return b.year - a.year;
   });
