@@ -19,7 +19,7 @@ export const personalInfo = {
   videoUrl:    'https://www.youtube.com/embed/dQw4w9WgXcQ',
   videoLabel:  'Introduction Video',
   videoPoster: '',
-  statusTag:  'Open for Graduate Research Associate Opportunities — 2026',
+  statusTag:  'Open for Graduate Research Assistant Opportunities — 2026',
   socials: {
     orcid:    'https://orcid.org/0009-0001-0674-0240',
     github:   'https://github.com/iamshibly',
@@ -189,6 +189,7 @@ export const publications: Publication[] = [
     year:     2025,
     type:     'Domestic Conference',
     status:   'Accepted',
+    link:     'https://doi.org/10.1109/ICCIT68739.2025.11491320',
   },
   {
     title:    'Explainable AI-Driven Ensemble Learning Framework for PCOS Diagnosis Using AIM-PDCF and Quantum-GraphRFE Feature Selection',
@@ -197,6 +198,7 @@ export const publications: Publication[] = [
     year:     2025,
     type:     'Domestic Conference',
     status:   'Accepted',
+    link:     'https://doi.org/10.1109/ICCIT68739.2025.11491104',
   },
 
   /* ── Under Review — International Conferences ───────────────── */

@@ -86,7 +86,7 @@ const ContactSection = () => {
           {/* ── Left: Info + socials + references ──────────── */}
           <div className={`reveal ${isVisible ? 'visible' : ''}`}>
             <p className="contact-intro">
-              I'm actively looking for Graduate Research Associate opportunities and research collaborations.
+              I'm actively looking for Graduate Research Assistant opportunities and research collaborations.
               Feel free to reach out — I usually respond within 24 hours.
             </p>
 
@@ -176,7 +176,7 @@ const ContactSection = () => {
                   maxLength={5000}
                   value={form.message}
                   onChange={e => setForm(f => ({ ...f, message: e.target.value }))}
-                  placeholder="I'd love to discuss a potential Graduate Research Associate role or collaboration..."
+                  placeholder="I'd love to discuss a potential Graduate Research Assistant role or collaboration..."
                   className="form-input form-textarea"
                 />
               </div>
