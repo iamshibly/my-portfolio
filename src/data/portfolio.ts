@@ -18,7 +18,7 @@ export const personalInfo = {
   /* ── Video config ────────────────────────────────────────────── */
   videoUrl:    'https://www.youtube.com/embed/jjgKXvQAK_w?si=DHexernsj9XQw4xX',
   videoLabel:  'Introduction Video',
-  videoPoster: '',
+  videoPoster: 'https://img.youtube.com/vi/jjgKXvQAK_w/maxresdefault.jpg',
   statusTag:  'Open for Graduate Research Assistant Opportunities — 2026',
   socials: {
     orcid:    'https://orcid.org/0009-0001-0674-0240',

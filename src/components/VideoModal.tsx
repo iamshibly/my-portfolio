@@ -43,6 +43,7 @@ const VideoModal = ({ url, isOpen, onClose }: Props) => {
       role="dialog"
       aria-modal="true"
       aria-label="Video player"
+      onClick={onClose}
       style={{
         position:        'fixed',
         inset:           0,
@@ -55,7 +56,33 @@ const VideoModal = ({ url, isOpen, onClose }: Props) => {
         padding:         '2rem',
       }}
     >
+      {/* Close button at top right of the screen */}
+      <button
+        onClick={(e) => { e.stopPropagation(); onClose(); }}
+        aria-label="Close video"
+        style={{
+          position:        'absolute',
+          top:             '1.5rem',
+          right:           '1.5rem',
+          zIndex:          9001,
+          background:      'rgba(0,0,0,0.6)',
+          border:          '1px solid var(--border-color)',
+          borderRadius:    '0.4rem',
+          color:           'var(--white)',
+          padding:         '0.5rem',
+          display:         'flex',
+          alignItems:      'center',
+          cursor:          'pointer',
+          transition:      'background 0.2s',
+        }}
+        onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = 'rgba(var(--cyan-rgb), 0.15)')}
+        onMouseLeave={e => ((e.currentTarget as HTMLElement).style.background = 'rgba(0,0,0,0.6)')}
+      >
+        <X size={24} />
+      </button>
+
       <div
+        onClick={(e) => e.stopPropagation()}
         style={{
           position:    'relative',
           width:       'min(900px, 90vw)',
@@ -65,31 +92,6 @@ const VideoModal = ({ url, isOpen, onClose }: Props) => {
           overflow:    'hidden',
         }}
       >
-        {/* Close button */}
-        <button
-          onClick={onClose}
-          aria-label="Close video"
-          style={{
-            position:        'absolute',
-            top:             '0.75rem',
-            right:           '0.75rem',
-            zIndex:          1,
-            background:      'rgba(0,0,0,0.6)',
-            border:          '1px solid var(--border-color)',
-            borderRadius:    '0.4rem',
-            color:           'var(--white)',
-            padding:         '0.35rem',
-            display:         'flex',
-            alignItems:      'center',
-            cursor:          'none',
-            transition:      'background 0.2s',
-          }}
-          onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = 'rgba(var(--cyan-rgb), 0.15)')}
-          onMouseLeave={e => ((e.currentTarget as HTMLElement).style.background = 'rgba(0,0,0,0.6)')}
-        >
-          <X size={18} />
-        </button>
-
         {/* Video */}
         <div style={{ aspectRatio: '16/9' }}>
           <iframe
