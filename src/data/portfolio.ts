@@ -16,7 +16,7 @@ export const personalInfo = {
   cvUrl:      '/cv/Main_CV.pdf',
   cvFileName: 'Md_Zubayer_Ahmad_Shibly_CV.pdf',
   /* ── Video config ────────────────────────────────────────────── */
-  videoUrl:    'https://www.youtube.com/embed/dQw4w9WgXcQ',
+  videoUrl:    'https://www.youtube.com/embed/jjgKXvQAK_w?si=DHexernsj9XQw4xX',
   videoLabel:  'Introduction Video',
   videoPoster: '',
   statusTag:  'Open for Graduate Research Assistant Opportunities — 2026',
