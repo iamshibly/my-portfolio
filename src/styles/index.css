@@ -1351,3 +1351,7 @@ body::before {
     animation: none !important;
   }
 }
+
+.cta-row::-webkit-scrollbar {
+  display: none;
+}

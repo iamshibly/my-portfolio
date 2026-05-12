@@ -1,4 +1,5 @@
 import { useEffect, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ExternalLink } from 'lucide-react';
 
 interface Props {
@@ -38,7 +39,7 @@ const VideoModal = ({ url, isOpen, onClose }: Props) => {
 
   if (!isOpen) return null;
 
-  return (
+  return createPortal(
     <div
       role="dialog"
       aria-modal="true"
@@ -47,9 +48,9 @@ const VideoModal = ({ url, isOpen, onClose }: Props) => {
       style={{
         position:        'fixed',
         inset:           0,
-        zIndex:          9000,
-        background:      'rgba(6,9,15,0.92)',
-        backdropFilter:  'blur(14px)',
+        zIndex:          9999,
+        background:      'rgba(6,9,15,0.94)',
+        backdropFilter:  'blur(18px)',
         display:         'flex',
         alignItems:      'center',
         justifyContent:  'center',
@@ -138,7 +139,8 @@ const VideoModal = ({ url, isOpen, onClose }: Props) => {
         )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 

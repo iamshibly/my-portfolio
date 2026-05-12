@@ -149,7 +149,7 @@ export interface Publication {
 export const publications: Publication[] = [
   {
     title:    'TRUST-GFS: Tie-safe Reliability and Uplift Screening for Target-guided Genetic Feature Selection',
-    authors:  '<strong class="author-self">MZA Shibly</strong>, R Bardhan',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, Al-Amain, MN Saad, R Bardhan',
     venue:    'NeurIPS 2026',
     year:     2026,
     type:     'International Conference',
@@ -605,7 +605,7 @@ export const news: NewsItem[] = [
     date: 'May 2026',
     title: 'TRUST-GFS Submitted to NeurIPS 2026 (A*)',
     summary:
-      '"TRUST-GFS: Tie-safe Reliability and Uplift Screening for Target-guided Genetic Feature Selection" — submitted to NeurIPS 2026 (A*), in collaboration with Rajon Bardhan (Augusta University, USA). The method introduces statistical uplift gates on top of genetic search so that selected feature subsets remain reliable under label noise, ties, and small-sample drift.',
+      '"TRUST-GFS: Tie-safe Reliability and Uplift Screening for Target-guided Genetic Feature Selection" — submitted to NeurIPS 2026 (A*), in collaboration with Al-Amain, MN Saad, and Rajon Bardhan. The method introduces statistical uplift gates on top of genetic search so that selected feature subsets remain reliable under label noise, ties, and small-sample drift.',
     image: '/news/neurips-submission-2026.jpg',
     featured: false,
   },

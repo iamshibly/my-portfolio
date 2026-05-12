@@ -126,8 +126,16 @@ const HeroSection = () => {
 
             {/* CTA row */}
             <div
-              className="fade-up fade-up-5"
-              style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '2.5rem' }}
+              className="fade-up fade-up-5 cta-row"
+              style={{ 
+                display: 'flex', 
+                flexWrap: 'nowrap', 
+                gap: '0.65rem', 
+                marginBottom: '2.5rem',
+                overflowX: 'auto',
+                WebkitOverflowScrolling: 'touch',
+                scrollbarWidth: 'none',
+              }}
             >
               <a
                 href={personalInfo.cvUrl}
