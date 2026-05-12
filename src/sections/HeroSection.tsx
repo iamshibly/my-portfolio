@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { ExternalLink, Github, Linkedin, Play, Orbit } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Play, Orbit, GraduationCap } from 'lucide-react';
+
 import { personalInfo, heroStats } from '../data/portfolio';
 import { useScrollReveal, useCountUp } from '../hooks/useScrollReveal';
 import VideoModal from '../components/VideoModal';
@@ -135,6 +136,9 @@ const HeroSection = () => {
                 className="btn-primary"
               >
                 <ExternalLink size={14} /> View CV
+              </a>
+              <a href={personalInfo.socials.googleScholar} target="_blank" rel="noopener noreferrer" className="btn-outline">
+                <GraduationCap size={14} /> Google Scholar
               </a>
               <a href={personalInfo.socials.orcid} target="_blank" rel="noopener noreferrer" className="btn-outline">
                 <Orbit size={14} /> ORCID

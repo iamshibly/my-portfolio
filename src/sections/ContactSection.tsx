@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Orbit, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Orbit, Send, CheckCircle, AlertCircle, GraduationCap } from 'lucide-react';
 import { personalInfo, references } from '../data/portfolio';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
@@ -108,9 +108,10 @@ const ContactSection = () => {
 
             <div className="social-row">
               {[
+                { icon: <GraduationCap size={18} />, href: personalInfo.socials.googleScholar, label: 'Google Scholar' },
+                { icon: <Orbit size={18} />,    href: personalInfo.socials.orcid,    label: 'ORCID' },
                 { icon: <Github size={18} />,   href: personalInfo.socials.github,   label: 'GitHub' },
                 { icon: <Linkedin size={18} />, href: personalInfo.socials.linkedin, label: 'LinkedIn' },
-                { icon: <Orbit size={18} />,    href: personalInfo.socials.orcid,    label: 'ORCID' },
               ].map(s => (
                 <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
                    aria-label={s.label} className="social-btn">

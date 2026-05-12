@@ -24,6 +24,7 @@ export const personalInfo = {
     orcid:    'https://orcid.org/0009-0001-0674-0240',
     github:   'https://github.com/iamshibly',
     linkedin: 'https://www.linkedin.com/in/iamshibly/',
+    googleScholar: 'https://scholar.google.com/citations?view_op=list_works&hl=en&user=hnlFuBwAAAAJ',
   },
 } as const;
 
@@ -383,7 +384,7 @@ export const experience: Experience[] = [
     org:         'IMUN (International Model United Nations)',
     orgUrl:      'https://www.internationalmun.org/',
     description:
-      'Represented IMUN on the Southeast University campus as a Campus Ambassador — running outreach for the organisation\u2019s diplomacy simulations, briefing prospective delegates on committee formats, and channelling interested students into IMUN\u2019s online conferences.',
+      'Represented IMUN on the Southeast University campus as a Campus Ambassador — running outreach for the organisation’s diplomacy simulations, briefing prospective delegates on committee formats, and channelling interested students into IMUN’s online conferences.',
     links: [
       { label: 'Offer Letter', url: 'https://drive.google.com/file/d/1xQSNMAZcsWHuVMru1aA6vGxK2Ebdk-2z/view?usp=sharing' },
     ],
@@ -532,7 +533,7 @@ export const news: NewsItem[] = [
     date: 'September 2025',
     title: 'Appointed Director of Project Management — Roots of Rise (NGO)',
     summary:
-      'Joined Roots of Rise as Director of Project Management (Volunteer). Roots of Rise is a youth-driven NGO built around the 3E motto — Educate, Empower, Elevate — working toward a sustainable and just future. The role covers project planning, volunteer coordination, and programme delivery for the organisation\u2019s education and community-impact initiatives.',
+      'Joined Roots of Rise as Director of Project Management (Volunteer). Roots of Rise is a youth-driven NGO built around the 3E motto — Educate, Empower, Elevate — working toward a sustainable and just future. The role covers project planning, volunteer coordination, and programme delivery for the organisation’s education and community-impact initiatives.',
     image: '/news/roots-of-rise-2025.jpg',
     featured: false,
   },
