@@ -142,19 +142,20 @@ const HeroSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
+                style={{ flexShrink: 0 }}
               >
                 <ExternalLink size={14} /> View CV
               </a>
-              <a href={personalInfo.socials.googleScholar} target="_blank" rel="noopener noreferrer" className="btn-outline">
-                <GraduationCap size={14} /> Google Scholar
+              <a href={personalInfo.socials.googleScholar} target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ flexShrink: 0 }}>
+                <GraduationCap size={14} /> Scholar
               </a>
-              <a href={personalInfo.socials.orcid} target="_blank" rel="noopener noreferrer" className="btn-outline">
+              <a href={personalInfo.socials.orcid} target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ flexShrink: 0 }}>
                 <Orbit size={14} /> ORCID
               </a>
-              <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="btn-outline">
+              <a href={personalInfo.socials.github} target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ flexShrink: 0 }}>
                 <Github size={14} /> GitHub
               </a>
-              <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="btn-outline">
+              <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ flexShrink: 0 }}>
                 <Linkedin size={14} /> LinkedIn
               </a>
             </div>
