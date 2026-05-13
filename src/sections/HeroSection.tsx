@@ -163,10 +163,9 @@ const HeroSection = () => {
             {/* Stat row */}
             <div
               ref={ref}
-              className="fade-up fade-up-6"
+              className="fade-up fade-up-6 hero-stat-grid"
               style={{
                 display:             'grid',
-                gridTemplateColumns: 'repeat(4, 1fr)',
                 gap:                 '1rem',
                 padding:             '1.5rem 1rem',
                 background:          'rgba(var(--cyan-rgb), 0.04)',
@@ -333,9 +332,29 @@ const HeroSection = () => {
           background: rgba(var(--cyan-rgb), 0.22);
           box-shadow: 0 0 44px rgba(var(--cyan-rgb), 0.35);
         }
-        /* Hide video column on very small screens */
+        .hero-stat-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+        /* Mobile responsive adjustments */
         @media (max-width: 560px) {
-          .hero-video-col { display: none !important; }
+          .hero-stat-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem 1rem !important;
+          }
+          .hero-video-col { 
+            flex: 1 1 100% !important; 
+            max-width: 100% !important;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+          }
+          .hero-video-btn {
+            max-width: 320px;
+          }
+          /* Prevent scroll indicator from overlapping stats on small screens */
+          .scroll-indicator {
+            display: none !important;
+          }
         }
       `}</style>
     </section>
