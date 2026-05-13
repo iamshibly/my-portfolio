@@ -41,7 +41,7 @@ export const aboutBio: string[] = [
   "I am a <strong>Computer Science and Engineering</strong> (CSE) student at <strong>SEU</strong>, <strong>Bangladesh</strong>. My focus is AI research, specifically federated learning, transformer models, explainable AI, and medical imaging.",
   "I build systems that tackle real problems in healthcare, finance, and security. I've collaborated with researchers across the <strong>UK</strong> and <strong>USA</strong>, with papers <strong>accepted at IEEE FUZZ</strong>, <strong>submitted to NeurIPS</strong>, and <strong>targeting ICDM</strong>.",
   "I also believe in working close to the algorithm, which is reflected in works like <strong>TRUST-GFS</strong> and <strong>UADGE-FS</strong>, where I contributed to designing novel feature selection frameworks from the ground up.",
-  "I'm actively seeking MSc opportunities in Europe, North America, and East Asia where I can push this research further.",
+  "I am actively seeking MSc opportunities where I can push this research further and drive impactful innovations on a global scale.",
 ];
 
 export const researchInterests: string[] = [
