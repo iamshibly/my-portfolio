@@ -12,23 +12,27 @@ import CertificationsSection from './sections/CertificationsSection';
 import NewsSection from './sections/NewsSection';
 import ContactSection from './sections/ContactSection';
 import Footer from './components/Footer';
+import { Analytics } from '@vercel/analytics/react';
 
 const App = () => (
-  <Layout>
-    <HeroSection />
-    <AboutSection />
-    <EducationSection />
-    <ResearchSection />
-    <PublicationsSection />
-    <ProjectsSection />
-    <CollaboratorsSection />
-    <ExperienceSection />
-    <SkillsSection />
-    <CertificationsSection />
-    <NewsSection />
-    <ContactSection />
-    <Footer />
-  </Layout>
+  <>
+    <Layout>
+      <HeroSection />
+      <AboutSection />
+      <EducationSection />
+      <ResearchSection />
+      <PublicationsSection />
+      <ProjectsSection />
+      <CollaboratorsSection />
+      <ExperienceSection />
+      <SkillsSection />
+      <CertificationsSection />
+      <NewsSection />
+      <ContactSection />
+      <Footer />
+    </Layout>
+    <Analytics />
+  </>
 );
 
 export default App;
