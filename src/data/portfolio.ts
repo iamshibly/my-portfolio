@@ -177,7 +177,7 @@ export const publications: Publication[] = [
   },
   {
     title:    'Leveraging Multi-Algorithmic Feature Selection and Ensemble Machine Learning for Accurate Detection of Polycystic Ovarian Syndrome',
-    authors:  '<strong class="author-self">MZA Shibly</strong>, S Mia, N Uddin, I Amin, Al-Amain, KMM Uddin, R Bardhan, MS Babu',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, S Mia, N Uddin, I Amin, Al-Amain, KMM Uddin',
     venue:    'IEEE ICCCNT 2025, Indore, India',
     year:     2025,
     type:     'International Conference',
@@ -232,7 +232,7 @@ export const publications: Publication[] = [
   /* ── Under Review — Journals ────────────────────────────────── */
   {
     title:    'Q-SEAL: An Explainable Transformer-Based Meta-Ensemble Model for Ovarian Cancer Prediction and Deployment Evaluation',
-    authors:  '<strong class="author-self">MZA Shibly</strong>, SAK Aditto, MJ Islam, KMM Uddin',
+    authors:  '<strong class="author-self">MZA Shibly</strong>, SAK Aditto, MJ Islam, MSAM Joy, KMM Uddin',
     venue:    'Journal of Pathology Informatics',
     year:     2026,
     type:     'Journal',
