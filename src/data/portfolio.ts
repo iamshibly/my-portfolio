@@ -30,8 +30,8 @@ export const personalInfo = {
 
 /* ─── Hero Stats ─────────────────────────────────────────────── */
 export const heroStats: { target: number; label: string }[] = [
-  { target: 5,  label: 'Accepted Papers' },
-  { target: 8,  label: 'Under Review' },
+  { target: 6,  label: 'Accepted Papers' },
+  { target: 7,  label: 'Under Review' },
   { target: 3,  label: 'Projects' },
   { target: 1,  label: 'Departmental Rank' },
 ];
@@ -176,6 +176,14 @@ export const publications: Publication[] = [
     coreRank: 'C',
   },
   {
+    title:    'An Explainable Stacking Ensemble Framework with Disagreement-Aware Feature Selection for Loan Approval Prediction',
+    authors:  'MZ Hossen, S Ullah, <strong class="author-self">MZA Shibly</strong>, A Islam, KMM Uddin',
+    venue:    'TENSYMP 2026, Penang, Malaysia',
+    year:     2026,
+    type:     'International Conference',
+    status:   'Accepted',
+  },
+  {
     title:    'Leveraging Multi-Algorithmic Feature Selection and Ensemble Machine Learning for Accurate Detection of Polycystic Ovarian Syndrome',
     authors:  '<strong class="author-self">MZA Shibly</strong>, S Mia, N Uddin, I Amin, Al-Amain, KMM Uddin',
     venue:    'IEEE ICCCNT 2025, Indore, India',
@@ -206,15 +214,7 @@ export const publications: Publication[] = [
   {
     title:    'Adaptive Biomarker Categorization with DiCAT and TCCA Feature Selection for Robust, Explainable Early Ovarian Cancer Detection',
     authors:  '<strong class="author-self">MZA Shibly</strong>, T Ahmod, SZ Khan, Al-Amain, S Ahmed',
-    venue:    'IRAI 2026, Melbourne, Australia',
-    year:     2026,
-    type:     'International Conference',
-    status:   'Under Review',
-  },
-  {
-    title:    'An Explainable Stacking Ensemble Framework with Disagreement-Aware Feature Selection for Loan Approval Prediction',
-    authors:  'MZ Hossen, S Ullah, <strong class="author-self">MZA Shibly</strong>, A Islam, KMM Uddin',
-    venue:    'TENSYMP 2026, Penang, Malaysia',
+    venue:    'AIBThings 2026, Central Michigan University, USA',
     year:     2026,
     type:     'International Conference',
     status:   'Under Review',
@@ -589,6 +589,15 @@ export const news: NewsItem[] = [
     summary:
       '"FedBridge++: a privacy-preserving federated self-supervision framework with interpretable transformers for tabular loan approval" — accepted at IEEE/ACIS SERA 2026 (USA). The framework applies federated self-supervision to credit-decision data, preserving client privacy while keeping the model auditable through interpretable transformer blocks.',
     image: '/news/sera-2026.jpg',
+    featured: false,
+  },
+  {
+    id: 'tensymp-accepted-2026',
+    date: 'May 2026',
+    title: 'Paper Accepted at IEEE TENSYMP 2026 (Malaysia)',
+    summary:
+      'Our paper "An Explainable Stacking Ensemble Framework with Disagreement-Aware Feature Selection for Loan Approval Prediction" has been accepted at TENSYMP 2026. TENSYMP is one of the flagship technical conferences of IEEE Region 10, bringing together researchers, engineers, academicians, and industry professionals from the Asia-Pacific region. I feel truly honored that our work has been accepted there.',
+    image: '/news/tensymp-2026.png',
     featured: false,
   },
   {
